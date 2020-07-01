@@ -42,13 +42,14 @@ export class PlayerSprite extends CircleSprite {
 
     private _toY: number = 0;
 
+    public ack?: number;
+
+    // Sprites
     private _weaponSprite: Sprite;
 
     private _nameTextSprite: TextSprite;
 
     private _livesSprite: PlayerLivesSprite;
-
-    public ack?: number;
 
     // Init
     constructor(player: Models.PlayerJSON, isGhost: boolean) {

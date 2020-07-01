@@ -2,6 +2,9 @@ import { BulletSprite } from '../sprites/BulletSprite';
 import { ManagerContainer } from './ManagerContainer';
 import { Models } from '@tosios/common';
 
+const generateRandomId = () =>
+    Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+
 export default class BulletsManager extends ManagerContainer<BulletSprite> {
     constructor() {
         super('BULLETS');
@@ -42,9 +45,8 @@ export default class BulletsManager extends ManagerContainer<BulletSprite> {
             });
         } else {
             // Add new bullet
-            const randomId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
             this.add(
-                randomId,
+                generateRandomId(),
                 new BulletSprite({
                     x: bullet.fromX,
                     y: bullet.fromY,

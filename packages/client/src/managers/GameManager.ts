@@ -7,7 +7,7 @@ import { Emitter } from 'pixi-particles';
 import { ParticleTextures } from '../images/textures';
 import { SpriteSheets } from '../images/maps';
 import { Viewport } from 'pixi-viewport';
-import particleConfig from '../particles/impact.json';
+import impactParticuleConfig from '../particles/impact.json';
 
 // We don't want to scale textures linearly because they would appear blurry.
 settings.SCALE_MODE = SCALE_MODES.NEAREST;
@@ -443,8 +443,8 @@ export default class GameManager {
 
     // SPAWNERS
     private spawnImpact = (x: number, y: number, color = '#ffffff') => {
-        new Emitter(this.playersManager, [ParticleTextures.particleTexture], {
-            ...particleConfig,
+        new Emitter(this.playersManager, [ParticleTextures.impactTexture], {
+            ...impactParticuleConfig,
             color: {
                 start: color,
                 end: color,
