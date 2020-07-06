@@ -1,7 +1,7 @@
 import { AnimatedSprite, Sprite, utils } from 'pixi.js';
 import { CircleSprite, Effects, PlayerLivesSprite, TextSprite } from '.';
 import { Constants, Maths, Models, Types } from '@tosios/common';
-import { PlayerTextures, WeaponTextures } from '../images/textures';
+import { PlayersTextures, WeaponsTextures } from '../images/textures';
 
 const NAME_OFFSET = 4;
 const LIVES_OFFSET = 10;
@@ -54,11 +54,11 @@ export class PlayerSprite extends CircleSprite {
     // Init
     constructor(player: Models.PlayerJSON, isGhost: boolean) {
         super(player.x, player.y, player.radius, 0, {
-            array: player.lives > 0 ? PlayerTextures.playerIdleTextures : PlayerTextures.playerDeadTextures,
+            array: player.lives > 0 ? PlayersTextures.playerIdleTextures : PlayersTextures.playerDeadTextures,
         });
 
         // Weapon
-        this._weaponSprite = new Sprite(WeaponTextures.staffTexture);
+        this._weaponSprite = new Sprite(WeaponsTextures.staffTexture);
         this._weaponSprite.anchor.set(0, 0.5);
         this._weaponSprite.position.set(player.x, player.y);
         this._weaponSprite.zIndex = 0;
@@ -126,8 +126,8 @@ export class PlayerSprite extends CircleSprite {
         // Player
         this.sprite.alpha = isAlive ? 1.0 : 0.2;
         (this.sprite as AnimatedSprite).textures = isAlive
-            ? PlayerTextures.playerIdleTextures
-            : PlayerTextures.playerDeadTextures;
+            ? PlayersTextures.playerIdleTextures
+            : PlayersTextures.playerDeadTextures;
         (this.sprite as AnimatedSprite).width = this.body.width;
         (this.sprite as AnimatedSprite).height = this.body.height;
         (this.sprite as AnimatedSprite).play();

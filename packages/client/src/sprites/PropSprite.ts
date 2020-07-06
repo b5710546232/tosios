@@ -1,5 +1,5 @@
-import { Models, Types } from '@tosios/common';
-import { PropTextures } from '../images/textures';
+import { Models } from '@tosios/common';
+import { PropsTextures } from '../images/textures';
 import { RectangleSprite } from '.';
 import { Texture } from 'pixi.js';
 
@@ -45,8 +45,8 @@ const getTexture = (
 } => {
     switch (type) {
         case 'potion-red':
-            return { array: PropTextures.potionRedTextures };
+            return { array: PropsTextures.potionRedTextures };
         default:
-            return { array: PropTextures.potionRedTextures };
+            return { array: PropsTextures.potionRedTextures };
     }
 };

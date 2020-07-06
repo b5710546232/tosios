@@ -4,7 +4,7 @@ import { Collisions, Constants, Entities, Geometry, Maps, Maths, Models, Tiled, 
 import { MonsterSprite, PlayerSprite, PropSprite } from '../sprites';
 import { getSpritesLayer, getTexturesSet } from '../utils/tiled';
 import { Emitter } from 'pixi-particles';
-import { ParticleTextures } from '../images/textures';
+import { ParticlesTextures } from '../images/textures';
 import { SpriteSheets } from '../images/maps';
 import { Viewport } from 'pixi-viewport';
 import impactParticuleConfig from '../particles/impact.json';
@@ -443,7 +443,7 @@ export default class GameManager {
 
     // SPAWNERS
     private spawnImpact = (x: number, y: number, color = '#ffffff') => {
-        new Emitter(this.playersManager, [ParticleTextures.impactTexture], {
+        new Emitter(this.playersManager, [ParticlesTextures.impactTexture], {
             ...impactParticuleConfig,
             color: {
                 start: color,

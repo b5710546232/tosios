@@ -1,6 +1,6 @@
 import { CircleSprite } from '.';
 import { Models } from '@tosios/common';
-import { WeaponTextures } from '../images/textures';
+import { WeaponsTextures } from '../images/textures';
 import { utils } from 'pixi.js';
 
 /**
@@ -20,7 +20,7 @@ export class BulletSprite extends CircleSprite {
     // Init
     constructor(bullet: Models.BulletJSON) {
         super(bullet.x, bullet.y, bullet.radius, bullet.rotation, {
-            single: WeaponTextures.bulletTexture,
+            single: WeaponsTextures.bulletTexture,
         });
 
         this.playerId = bullet.playerId;
