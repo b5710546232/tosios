@@ -1,6 +1,6 @@
-import { CircleSprite, Effects } from '.';
+import { CircleSprite, Effects } from './';
 import { Models } from '@tosios/common';
-import { MonstersTextures } from '../images/textures';
+import { MonstersTextures } from '../game/images/textures';
 
 const HURT_COLOR = 0xff0000;
 

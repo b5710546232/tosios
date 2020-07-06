@@ -1,6 +1,6 @@
 import { CircleSprite } from '.';
 import { Models } from '@tosios/common';
-import { WeaponsTextures } from '../images/textures';
+import { WeaponsTextures } from '../game/images/textures';
 import { utils } from 'pixi.js';
 
 /**

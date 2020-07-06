@@ -1,5 +1,5 @@
 import { ManagerContainer } from './ManagerContainer';
-import { PlayerSprite } from '../sprites';
+import { PlayerSprite } from '../../sprites';
 
 export default class PlayersManager extends ManagerContainer<PlayerSprite> {
     constructor() {

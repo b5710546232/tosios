@@ -1,7 +1,7 @@
 import { AnimatedSprite, Sprite, utils } from 'pixi.js';
-import { CircleSprite, Effects, PlayerLivesSprite, TextSprite } from '.';
+import { CircleSprite, Effects, PlayerLivesSprite, TextSprite } from './';
 import { Constants, Maths, Models, Types } from '@tosios/common';
-import { PlayersTextures, WeaponsTextures } from '../images/textures';
+import { PlayersTextures, WeaponsTextures } from '../game/images/textures';
 
 const NAME_OFFSET = 4;
 const LIVES_OFFSET = 10;

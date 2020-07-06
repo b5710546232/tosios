@@ -1,4 +1,4 @@
-import { CircleSprite, RectangleSprite } from '../sprites';
+import { CircleSprite, RectangleSprite } from '../../sprites';
 import { Container } from 'pixi.js';
 
 export class ManagerContainer<T> extends Container {

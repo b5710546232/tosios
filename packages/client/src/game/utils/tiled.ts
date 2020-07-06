@@ -1,6 +1,6 @@
 import { BaseTexture, Container, Rectangle, Texture } from 'pixi.js';
 import { Constants, Tiled } from '@tosios/common';
-import { RectangleSprite } from '../sprites';
+import { RectangleSprite } from '../../sprites';
 
 const SPECIAL_LAYERS = ['collisions', 'spawners'];
 

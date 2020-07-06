@@ -1,5 +1,5 @@
-import { AnchorContainer } from '.';
-import { GUITextures } from '../images/textures';
+import { AnchorContainer } from './';
+import { GUITextures } from '../game/images/textures';
 import { Sprite } from 'pixi.js';
 
 export class PlayerLivesSprite extends AnchorContainer {

@@ -1,5 +1,5 @@
 import { Models } from '@tosios/common';
-import { PropsTextures } from '../images/textures';
+import { PropsTextures } from '../game/images/textures';
 import { RectangleSprite } from '.';
 import { Texture } from 'pixi.js';
 
